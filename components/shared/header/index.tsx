@@ -9,7 +9,7 @@ import Search from './search'
 
 export default function Header() {
   return (
-    <header className='bg-amber-900 text-white'>
+    <header className='bg-orange-950 text-white'>
       <div className='px-2'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>

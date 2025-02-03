@@ -7,7 +7,7 @@ import { APP_NAME } from '@/lib/constants'
 
 export default function Footer() {
   return (
-    <footer className='bg-amber-900 text-white underline-link'>
+    <footer className='bg-orange-950 text-white underline-link'>
       <div className='w-full'>
         <Button
           variant='ghost'
