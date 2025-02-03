@@ -11,7 +11,7 @@ export default function Footer() {
       <div className='w-full'>
         <Button
           variant='ghost'
-          className=' w-full rounded-none'
+          className='w-full rounded-none' // Added rounded-none to remove rounded corners
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <ChevronUp className='w-4 h-4 mr-2' />

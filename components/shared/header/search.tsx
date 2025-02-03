@@ -23,7 +23,7 @@ export default async function Search() {
       className='flex items-stretch h-10 w-full'
     >
       <Select name='category'>
-        <SelectTrigger className='w-auto h-full dark:border-amber-200 bg-gray-100 text-black border-r rounded-r-none rounded'>
+        <SelectTrigger className='w-auto h-full dark:border-amber-200 bg-gray-100 text-black rounded-r-none rounded-e-md'>
           <SelectValue placeholder='All' />
         </SelectTrigger>
         <SelectContent position='popper'>

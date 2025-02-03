@@ -40,7 +40,7 @@ export default function Header() {
         <div className='flex items-center px-3'>
           <Button
             variant='ghost'
-            className='header-button flex items-center gap-1 text-base [&_svg]:size-6'
+            className='header-button flex items-center gap-1 text-base rounded-r-lg [&_svg]:size-6' // Added rounded-r-lg here
           >
             <MenuIcon />
             All

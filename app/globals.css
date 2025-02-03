@@ -72,7 +72,7 @@ button {
     var(--secondary-foreground)
   ) !important; /* Ensure light text color is applied */
   border: 1px solid hsl(var(--border)) !important; /* Ensure border color is applied */
-  border-radius: var(--radius) !important; /* Border radius for the button */
+  border-radius: var(--radius); /* Border radius for the button */
   padding: 0.5rem 1rem !important; /* Padding for the button */
   cursor: pointer !important;
   transition: background-color 0.3s ease, transform 0.2s ease !important;
