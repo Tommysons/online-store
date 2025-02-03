@@ -8,25 +8,25 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* White background */
-    --foreground: 222.2 84% 4.9%; /* Dark foreground */
-    --card: 0 0% 100%; /* White card background */
-    --card-foreground: 222.2 84% 4.9%; /* Dark card text */
-    --popover: 0 0% 100%; /* White popover background */
-    --popover-foreground: 222.2 84% 4.9%; /* Dark popover text */
-    --primary: 180 100% 35%; /* Teal-100 as primary */
-    --primary-foreground: 210 40% 98%; /* Light text for primary */
-    --secondary: 180 60% 50%; /* Cyan-200 as secondary */
-    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark text for secondary */
-    --muted: 210 40% 96.1%; /* Light muted background */
-    --muted-foreground: 215.4 16.3% 46.9%; /* Gray muted text */
-    --accent: 200 90% 60%; /* Sky-300 as accent */
-    --accent-foreground: 210 40% 98%; /* Light text for accent */
+    --background: 255 100% 98%; /* Light background (orange-200 equivalent) */
+    --foreground: 24 100% 10%; /* Dark text for contrast */
+    --card: 255 100% 98%; /* Light card background */
+    --card-foreground: 24 100% 10%; /* Dark card text */
+    --popover: 255 100% 98%; /* Light popover background */
+    --popover-foreground: 24 100% 10%; /* Dark popover text */
+    --primary: 24 100% 20%; /* Orange-900 as primary (header color) */
+    --primary-foreground: 255 100% 98%; /* Light text for primary */
+    --secondary: 24 100% 40%; /* A lighter orange for secondary */
+    --secondary-foreground: 255 100% 98%; /* Light text for secondary */
+    --muted: 24 100% 90%; /* Very light muted background */
+    --muted-foreground: 24 100% 30%; /* Darker muted text */
+    --accent: 24 100% 60%; /* Bright orange for accents */
+    --accent-foreground: 255 100% 98%; /* Light text for accent */
     --destructive: 0 84.2% 60.2%; /* Red for destructive actions */
-    --destructive-foreground: 210 40% 98%; /* Light text for destructive */
-    --border: 214.3 31.8% 91.4%; /* Light border */
-    --input: 214.3 31.8% 91.4%; /* Light input background */
-    --ring: 180 100% 35%; /* Teal-100 as ring color */
+    --destructive-foreground: 255 100% 98%; /* Light text for destructive */
+    --border: 24 100% 80%; /* Light orange border */
+    --input: 24 100% 90%; /* Light input background */
+    --ring: 24 100% 20%; /* Orange-900 as ring color */
     --radius: 0.5rem; /* Border radius */
     --chart-1: 12 76% 61%; /* Chart color 1 */
     --chart-2: 173 58% 39%; /* Chart color 2 */
@@ -36,25 +36,25 @@ body {
   }
 
   .dark {
-    --background: 222.2 84% 4.9%; /* Dark background */
-    --foreground: 210 40% 98%; /* Light foreground */
-    --card: 222.2 84% 4.9%; /* Dark card background */
-    --card-foreground: 210 40% 98%; /* Light card text */
-    --popover: 222.2 84% 4.9%; /* Dark popover background */
-    --popover-foreground: 210 40% 98%; /* Light popover text */
-    --primary: 180 100% 35%; /* Teal-100 as primary */
-    --primary-foreground: 222.2 47.4% 11.2%; /* Dark text for primary */
-    --secondary: 180 60% 50%; /* Cyan-200 as secondary */
-    --secondary-foreground: 210 40% 98%; /* Light text for secondary */
-    --muted: 217.2 32.6% 17.5%; /* Dark muted background */
-    --muted-foreground: 215 20.2% 65.1%; /* Gray muted text */
-    --accent: 200 90% 60%; /* Sky-300 as accent */
-    --accent-foreground: 210 40% 98%; /* Light text for accent */
+    --background: 24 100% 10%; /* Dark background */
+    --foreground: 255 100% 98%; /* Light foreground */
+    --card: 24 100% 10%; /* Dark card background */
+    --card-foreground: 255 100% 98%; /* Light card text */
+    --popover: 24 100% 10%; /* Dark popover background */
+    --popover-foreground: 255 100% 98%; /* Light popover text */
+    --primary: 24 100% 20%; /* Orange-900 as primary */
+    --primary-foreground: 255 100% 98%; /* Light text for primary */
+    --secondary: 24 100% 40%; /* A lighter orange for secondary */
+    --secondary-foreground: 255 100% 98%; /* Light text for secondary */
+    --muted: 24 100% 20%; /* Dark muted background */
+    --muted-foreground: 24 100% 60%; /* Light muted text */
+    --accent: 24 100% 60%; /* Bright orange for accents */
+    --accent-foreground: 255 100% 98%; /* Light text for accent */
     --destructive: 0 62.8% 30.6%; /* Dark red for destructive actions */
-    --destructive-foreground: 210 40% 98%; /* Light text for destructive */
-    --border: 217.2 32.6% 17.5%; /* Dark border */
-    --input: 217.2 32.6% 17.5%; /* Dark input background */
-    --ring: 180 100% 35%; /* Teal-100 as ring color */
+    --destructive-foreground: 255 100% 98%; /* Light text for destructive */
+    --border: 24 100% 20%; /* Dark border */
+    --input: 24 100% 20%; /* Dark input background */
+    --ring: 24 100% 20%; /* Orange-900 as ring color */
     --chart-1: 220 70% 50%; /* Chart color 1 */
     --chart-2: 160 60% 45%; /* Chart color 2 */
     --chart-3: 30 80% 55%; /* Chart color 3 */
