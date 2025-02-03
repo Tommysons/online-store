@@ -16,7 +16,7 @@ body {
     --popover-foreground: 24 100% 10%; /* Dark popover text */
     --primary: 24 100% 20%; /* Orange-900 as primary (header color) */
     --primary-foreground: 255 100% 98%; /* Light text for primary */
-    --secondary: 180 60% 60%; /* Teal-200 as secondary (button color) */
+    --secondary: 202, 68%, 36%; /* Teal-200 as secondary (button color) */
     --secondary-foreground: 255 100% 98%; /* Light text for secondary */
     --muted: 24 100% 90%; /* Very light muted background */
     --muted-foreground: 24 100% 30%; /* Darker muted text */
@@ -44,7 +44,7 @@ body {
     --popover-foreground: 255 100% 98%; /* Light popover text */
     --primary: 24 100% 20%; /* Orange-900 as primary */
     --primary-foreground: 255 100% 98%; /* Light text for primary */
-    --secondary: 180 60% 60%; /* Teal-200 as secondary (button color) */
+    --secondary: 202, 68%, 36%; /* Teal-200 as secondary (button color) */
     --secondary-foreground: 255 100% 98%; /* Light text for secondary */
     --muted: 24 100% 20%; /* Dark muted background */
     --muted-foreground: 24 100% 60%; /* Light muted text */
@@ -80,16 +80,16 @@ button {
 
 button:hover {
   background-color: hsl(
-    180,
-    60%,
-    50%
+    202,
+    68%,
+    36%
   ) !important; /* Darker teal for hover effect */
   transform: scale(1.05) !important; /* Slight scaling effect on hover */
 }
 
 button:active {
   background-color: hsl(
-    180,
+    120,
     60%,
     40%
   ) !important; /* Even darker teal when button is pressed */
@@ -101,5 +101,14 @@ button:active {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .header-button {
+    @apply cursor-pointer p-1 border border-transparent hover:border-white rounded-[2px];
+  }
+  .h1-bold {
+    @apply font-bold text-2xl lg:text-3xl;
   }
 }
