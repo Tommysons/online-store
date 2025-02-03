@@ -16,11 +16,11 @@ body {
     --popover-foreground: 24 100% 10%; /* Dark popover text */
     --primary: 24 100% 20%; /* Orange-900 as primary (header color) */
     --primary-foreground: 255 100% 98%; /* Light text for primary */
-    --secondary: 202, 68%, 36%; /* Teal-200 as secondary (button color) */
+    --secondary: 24 100% 40%; /* A lighter orange for secondary */
     --secondary-foreground: 255 100% 98%; /* Light text for secondary */
     --muted: 24 100% 90%; /* Very light muted background */
     --muted-foreground: 24 100% 30%; /* Darker muted text */
-    --accent: 200 90% 60%; /* Sky-300 as accent (button hover color) */
+    --accent: 24 100% 60%; /* Bright orange for accents */
     --accent-foreground: 255 100% 98%; /* Light text for accent */
     --destructive: 0 84.2% 60.2%; /* Red for destructive actions */
     --destructive-foreground: 255 100% 98%; /* Light text for destructive */
@@ -44,11 +44,11 @@ body {
     --popover-foreground: 255 100% 98%; /* Light popover text */
     --primary: 24 100% 20%; /* Orange-900 as primary */
     --primary-foreground: 255 100% 98%; /* Light text for primary */
-    --secondary: 202, 68%, 36%; /* Teal-200 as secondary (button color) */
+    --secondary: 24 100% 40%; /* A lighter orange for secondary */
     --secondary-foreground: 255 100% 98%; /* Light text for secondary */
     --muted: 24 100% 20%; /* Dark muted background */
     --muted-foreground: 24 100% 60%; /* Light muted text */
-    --accent: 200 90% 60%; /* Sky-300 as accent (button hover color) */
+    --accent: 24 100% 60%; /* Bright orange for accents */
     --accent-foreground: 255 100% 98%; /* Light text for accent */
     --destructive: 0 62.8% 30.6%; /* Dark red for destructive actions */
     --destructive-foreground: 255 100% 98%; /* Light text for destructive */
@@ -63,38 +63,6 @@ body {
   }
 }
 
-/* Button Styles */
-button {
-  background-color: hsl(
-    var(--secondary)
-  ) !important; /* Ensure secondary color is applied */
-  color: hsl(
-    var(--secondary-foreground)
-  ) !important; /* Ensure light text color is applied */
-  border: 1px solid hsl(var(--border)) !important; /* Ensure border color is applied */
-  border-radius: var(--radius); /* Border radius for the button */
-  padding: 0.5rem 1rem !important; /* Padding for the button */
-  cursor: pointer !important;
-  transition: background-color 0.3s ease, transform 0.2s ease !important;
-}
-
-button:hover {
-  background-color: hsl(
-    202,
-    68%,
-    36%
-  ) !important; /* Darker teal for hover effect */
-  transform: scale(1.05) !important; /* Slight scaling effect on hover */
-}
-
-button:active {
-  background-color: hsl(
-    120,
-    60%,
-    40%
-  ) !important; /* Even darker teal when button is pressed */
-}
-
 @layer base {
   * {
     @apply border-border;
@@ -106,7 +74,7 @@ button:active {
 
 @layer utilities {
   .header-button {
-    @apply cursor-pointer p-1 border border-transparent hover:border-white rounded-[2px];
+    @apply cursor-pointer p-1 border border-transparent  hover:border-white rounded-[5px];
   }
   .h1-bold {
     @apply font-bold text-2xl lg:text-3xl;
