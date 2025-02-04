@@ -1,4 +1,4 @@
-export const data = {
+const data = {
   headerMenus: [
     {
       name: 'Cutting & Styling',
@@ -29,4 +29,57 @@ export const data = {
       href: '/page/help',
     },
   ],
+  carousels: [
+    {
+      title: 'Cutting & Styling',
+      buttonCaption: 'Book Now',
+      url: '/search?catergory=cutting-styling',
+      image: '/images/cutting-styling2.jpg',
+      isPublished: true,
+    },
+    {
+      title: 'Hair Color & Chemicals',
+      buttonCaption: 'Book Now',
+      image: '/images/hair-color.jpg',
+      url: '/search?catergory=hair-color-chemicals',
+      isPublished: true,
+    },
+    {
+      title: 'Hair Care Treatment',
+      buttonCaption: 'Book Now',
+      image: '/images/hair-treatment.jpg',
+      url: '/search?catergory=hair-care-treatment',
+      isPublished: true,
+    },
+    // {
+    //   title: 'Keratin',
+    //   buttonCaption: 'Order Now',
+    //   image: '/images/keratin.jpg',
+    //   url: '/search?catergory=keratin',
+    //   isPublished: true,
+    // },
+    // {
+    //   title: 'Maroccanoil',
+    //   buttonCaption: 'Order Now',
+    //   image: '/images/maroccanoil.jpg',
+    //   url: '/search?catergory=maroccanoil',
+    //   isPublished: true,
+    // },
+    // {
+    //   title: 'Opalex',
+    //   buttonCaption: 'Order Now',
+    //   image: '/images/opalex.jpg',
+    //   url: '/search?catergory=opalex',
+    //   isPublished: true,
+    // },
+    // {
+    //   title: 'Redken',
+    //   buttonCaption: 'Order Now',
+    //   image: '/images/redken.jpg',
+    //   url: '/search?catergory=redken',
+    //   isPublished: true,
+    // },
+  ],
 }
+
+export default data
