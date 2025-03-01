@@ -8,7 +8,7 @@ const products: IProductInput[] = [
     category: 'Cutting & Styling',
     images: ['/images/cutting-styling/women.jpeg'],
     isPublished: true,
-    price: 75,
+    price: 75.0,
     listPrice: 'Prices may vary depending on the style.',
     description: 'Need description here',
   },
@@ -18,7 +18,7 @@ const products: IProductInput[] = [
     category: 'Cutting & Styling',
     images: ['/images/cutting-styling/man.jpeg'],
     isPublished: true,
-    price: 45,
+    price: 45.0,
     listPrice: 'Prices may vary depending on the style.',
     description: 'Need description here',
   },
@@ -28,7 +28,7 @@ const products: IProductInput[] = [
     category: 'Cutting & Styling',
     images: ['/images/cutting-styling/kid.jpeg'],
     isPublished: true,
-    price: 25,
+    price: 25.0,
     description: 'Need description here',
   },
   {
@@ -37,16 +37,16 @@ const products: IProductInput[] = [
     category: 'Cutting & Styling',
     images: ['/images/cutting-styling/bang.jpeg'],
     isPublished: true,
-    price: 15,
+    price: 15.0,
     description: 'Need description here',
   },
   {
     name: 'Shampoo Blow-Dry',
     slug: toSlug('Shampoo Blow-Dry'),
-    category: 'Hair Cair Treatment',
-    images: ['/images/hair-care-treatment/shampoo.jpeg'],
+    category: 'Cutting & Styling',
+    images: ['/images/cutting-styling/shampoo.jpeg'],
     isPublished: true,
-    price: 40,
+    price: 40.0,
     listPrice: 'Prices may vary depending on the style.',
     description: 'Need description here',
   },
@@ -56,7 +56,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/grey.jpeg'],
     isPublished: true,
-    price: 130,
+    price: 130.0,
     listPrice: 'Prices may vary depending on the style.',
     description:
       'Typically 1/2 inch grey hair growth. Approximately 2 Hours service.',
@@ -67,7 +67,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/balance.jpeg'],
     isPublished: true,
-    price: 150,
+    price: 150.0,
     listPrice: 'Prices may vary depending on the style.',
     description: `Grey Coverage over 1 inch growth or natural hair colour growth,
     added shine glossing treatment through out the hair. Approximately 2 hours 30 min service.`,
@@ -78,7 +78,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/full-head.jpeg'],
     isPublished: true,
-    price: 285,
+    price: 285.0,
     listPrice: 'Prices may vary depending on the style.',
     description: `High Lights, Low Lights or a combination of the two are 
     applied to the entire body of hair, This service offers seamless all over hair
@@ -90,7 +90,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/partial.jpeg'],
     isPublished: true,
-    price: 175,
+    price: 175.0,
     listPrice: 'Prices may vary depending on the style.',
     description: `High lights or low lights or a combination of the two are applied
     from the crown of the head forward to the front of the hair line.
@@ -103,7 +103,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/gloss.jpeg'],
     isPublished: true,
-    price: 50,
+    price: 50.0,
     description: `Great for all hair types to add incredible shine and protection,
      can be added to any colour service or as a Stand alone gloss.
      (Blow Dry is Extra) Approximately 1 hour service.`,
@@ -114,7 +114,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/blonds.jpeg'],
     isPublished: true,
-    price: 50,
+    price: 50.0,
     description: `Great for all hair types to add incredible shine and protection,
      can be added to any colour service or as a Stand alone gloss.
      (Blow Dry is Extra) Approximately 1 hour service.`,
@@ -124,6 +124,7 @@ const products: IProductInput[] = [
     slug: toSlug('Special Occasions'),
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/occasion.jpeg'],
+    listPrice: 'Price varies and will be determined during consultation.',
     description: `Up Do's for special occasions Upon Consultation.`,
     isPublished: true,
   },
@@ -133,7 +134,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/balayage.jpeg'],
     isPublished: true,
-    price: 300,
+    price: 300.0,
     listPrice: 'Prices may vary depending on the style.',
     description: `A Sun kissed natural looking hair colour with softer and less
     noticeable re-growth. It comes in various shapes and forms, dependign on the
@@ -147,7 +148,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/shadow.jpeg'],
     isPublished: true,
-    price: 300,
+    price: 300.0,
     listPrice: 'Prices may vary depending on the style.',
     description: `This a low maintenance hair colour technique in which a softer shade is
     applied directly to the roots giving a soft seamless contrats. It is a great way to
@@ -161,7 +162,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/baby.jpeg'],
     isPublished: true,
-    price: 285,
+    price: 285.0,
     listPrice: 'Prices may vary depending on the style.',
     description: `These are very delicate white blond highlights created using a very
     fine colouring technique to mimic a blond hue as if your hair has been naturally
@@ -174,7 +175,7 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/ombre.jpeg'],
     isPublished: true,
-    price: 250,
+    price: 250.0,
     listPrice: 'Prices may vary depending on the style.',
     description: `Shaded Colouring technique where a darker base colour is gradually
     lightened towards the end of the hair. Usually starting around mid-way giving it a
@@ -187,8 +188,8 @@ const products: IProductInput[] = [
     category: 'Hair Color & Chemicals',
     images: ['/images/hair-color/correction.jpeg'],
     isPublished: true,
-
-    description: `Upon Consultation.`,
+    listPrice: 'Price varies and will be determined during consultation.',
+    description: `Price varies and will be determined during consultation.`,
   },
   {
     name: 'Olaplex Repair & Strengthening',
@@ -196,7 +197,7 @@ const products: IProductInput[] = [
     category: 'Hair Care Treatment',
     images: ['/images/hair-care/olaplex.jpeg'],
     isPublished: true,
-    price: 50,
+    price: 50.0,
     listPrice: 'The price may go up to $85',
   },
   {
@@ -205,7 +206,7 @@ const products: IProductInput[] = [
     category: 'Hair Care Treatment',
     images: ['/images/hair-care/conditioning.jpeg'],
     isPublished: true,
-    price: 20,
+    price: 20.0,
   },
   {
     name: 'Botanical Hair Treatment',
@@ -213,7 +214,7 @@ const products: IProductInput[] = [
     category: 'Hair Care Treatment',
     images: ['/images/hair-care/botanical.jpeg'],
     isPublished: true,
-    price: 40,
+    price: 40.0,
   },
   {
     name: 'Keratin Smoothing Treatment',
@@ -221,7 +222,7 @@ const products: IProductInput[] = [
     category: 'Hair Care Treatment',
     images: ['/images/hair-care/keratin.jpeg'],
     isPublished: true,
-    price: 350,
+    price: 350.0,
     listPrice: 'Prices may vary depending on the treatment.',
   },
   {
