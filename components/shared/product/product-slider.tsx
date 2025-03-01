@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 import Image from 'next/image'
+import Link from 'next/link'
 import { IProduct } from '@/lib/db/models/product.model'
 
 export default function ProductSlider({
@@ -20,7 +21,6 @@ export default function ProductSlider({
   products: IProduct[]
   hideDetails?: boolean
 }) {
-  // Handle empty products array
   if (!products || products.length === 0) {
     return <div>No products available.</div>
   }
@@ -28,12 +28,7 @@ export default function ProductSlider({
   return (
     <div className='w-full bg-background'>
       {title && <h2 className='h2-bold mb-5'>{title}</h2>}
-      <Carousel
-        opts={{
-          align: 'start',
-        }}
-        className='w-full'
-      >
+      <Carousel opts={{ align: 'start' }} className='w-full'>
         <CarouselContent>
           {products.map((product) => (
             <CarouselItem
@@ -44,31 +39,31 @@ export default function ProductSlider({
                   : 'md:basis-1/3 lg:basis-1/5'
               }
             >
-              <div className='p-2'>
-                {/* Display the first image in the images array */}
-                {product.images && product.images.length > 0 && (
-                  <Image
-                    src={product.images[0] || '/placeholder-image.png'} // Fallback for empty src
-                    alt={product.name}
-                    width={300}
-                    height={200}
-                    className='w-full h-48 object-cover rounded-lg'
-                    priority={false} // Set to true if this image is above the fold
-                  />
-                )}
-                {!hideDetails && (
-                  <div className='mt-2'>
-                    <h3 className='text-lg font-semibold'>{product.name}</h3>
-                    <p className='text-sm text-gray-500'>
-                      {typeof product.price === 'number'
-                        ? `$${product.price.toFixed(2)}`
-                        : typeof product.listPrice === 'string'
-                        ? `${product.listPrice}`
-                        : 'N/A'}
-                    </p>
-                  </div>
-                )}
-              </div>
+              <Link href={`/product/${product.slug}`} passHref>
+                <div className='p-2 cursor-pointer'>
+                  {product.images && product.images.length > 0 && (
+                    <Image
+                      src={product.images[0] || '/placeholder-image.png'}
+                      alt={product.name}
+                      width={300}
+                      height={200}
+                      className='w-full h-48 object-cover rounded-lg'
+                    />
+                  )}
+                  {!hideDetails && (
+                    <div className='mt-2'>
+                      <h3 className='text-lg font-semibold'>{product.name}</h3>
+                      <p className='text-sm text-gray-500'>
+                        {typeof product.price === 'number'
+                          ? `$${product.price.toFixed(2)}`
+                          : typeof product.listPrice === 'string'
+                          ? `${product.listPrice}`
+                          : 'N/A'}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </Link>
             </CarouselItem>
           ))}
         </CarouselContent>

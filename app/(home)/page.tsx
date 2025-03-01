@@ -23,18 +23,6 @@ export default async function Page() {
   })
 
   const cards = [
-    // {
-    //   title: 'All Treatments',
-    //   link: {
-    //     text: 'View All',
-    //     href: '/search',
-    //   },
-    //   items: categories.map((category) => ({
-    //     name: category,
-    //     image: `/images/${toSlug(category)}.jpeg`,
-    //     href: `/search?category=${category}`,
-    //   })),
-    // },
     {
       title: 'Cutting & Styling',
       items: cuttingStyling,
