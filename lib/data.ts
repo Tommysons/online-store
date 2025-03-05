@@ -260,15 +260,15 @@ const data: Data = {
   headerMenus: [
     {
       name: 'Cutting & Styling',
-      href: '/search?tag=cutting-styling',
+      href: '/search/cutting-styling',
     },
     {
       name: 'Hair Color & Chemicals',
-      href: '/search?tag=hair-color-chemicals',
+      href: '/search/hair-color',
     },
     {
       name: 'Hair Cair Treatment',
-      href: '/search?tag=hair-care-treatment',
+      href: '/search/hair-care',
     },
     {
       name: 'Products',
@@ -291,7 +291,7 @@ const data: Data = {
     {
       title: 'Cutting & Styling',
       buttonCaption: 'Book Now',
-      url: '/search?catergory=cutting-styling',
+      url: '/search/cutting-styling',
       image: '/images/cutting-styling2.jpg',
       isPublished: true,
     },
@@ -299,14 +299,14 @@ const data: Data = {
       title: 'Hair Color & Chemicals',
       buttonCaption: 'Book Now',
       image: '/images/hair-color.jpg',
-      url: '/search?catergory=hair-color-chemicals',
+      url: '/search/hair-color',
       isPublished: true,
     },
     {
       title: 'Hair Care Treatment',
       buttonCaption: 'Book Now',
       image: '/images/hair-treatment.jpg',
-      url: '/search?catergory=hair-care-treatment',
+      url: '/search/hair-care',
       isPublished: true,
     },
     // {

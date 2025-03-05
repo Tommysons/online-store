@@ -28,7 +28,7 @@ export default async function Page() {
       items: cuttingStyling,
       link: {
         text: 'View All',
-        href: '/search?tag=cutting-styling',
+        href: '/search/cutting-styling',
       },
     },
     {
@@ -36,7 +36,7 @@ export default async function Page() {
       items: hairColorChemicals,
       link: {
         text: 'View All',
-        href: '/search?tag=hair-color-chemicals',
+        href: '/search/hair-color',
       },
     },
     {
@@ -44,7 +44,7 @@ export default async function Page() {
       items: hairCareTreatment,
       link: {
         text: 'View All',
-        href: '/search?tag=hair-care-treatment',
+        href: '/search/hair-care',
       },
     },
     {
@@ -52,7 +52,7 @@ export default async function Page() {
       items: brands,
       link: {
         text: 'View All',
-        href: '/search?tag=brands',
+        href: '/search/brands',
       },
     },
   ]

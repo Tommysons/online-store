@@ -5,7 +5,6 @@ import Menu from './menu'
 import { Button } from '@/components/ui/button'
 import { MenuIcon } from 'lucide-react'
 import data from '@/lib/data'
-import Search from './search'
 
 export default function Header() {
   return (
@@ -27,13 +26,11 @@ export default function Header() {
             </Link>
           </div>
           <div className='hidden md:block flex-1 max-w-xl'>
-            <Search />
+            {/* <Search /> */}
           </div>
           <Menu />
         </div>
-        <div className='md:hidden block py-2'>
-          <Search />
-        </div>
+        <div className='md:hidden block py-2'>{/* <Search /> */}</div>
       </div>
       {/* Modified section to take full width of the screen */}
       <div className='w-screen bg-orange-50'>
