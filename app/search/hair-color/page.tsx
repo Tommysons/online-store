@@ -1,7 +1,10 @@
-import React from 'react'
+import data from '@/lib/data'
+import Treatment from '@/components/treatments/treatment'
 
-const hairColor = () => {
-  return <div>hairColor</div>
+const HairColorPage = () => {
+  return (
+    <Treatment products={data.products} category='Hair Color & Chemicals' />
+  )
 }
 
-export default hairColor
+export default HairColorPage

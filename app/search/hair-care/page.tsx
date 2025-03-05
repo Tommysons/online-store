@@ -1,7 +1,8 @@
-import React from 'react'
+import data from '@/lib/data'
+import Treatment from '@/components/treatments/treatment'
 
-const page = () => {
-  return <div>helllo</div>
+const HairCarePage = () => {
+  return <Treatment products={data.products} category='Hair Care Treatment' />
 }
 
-export default page
+export default HairCarePage
